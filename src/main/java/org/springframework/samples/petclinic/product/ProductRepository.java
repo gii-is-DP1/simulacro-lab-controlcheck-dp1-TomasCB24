@@ -7,23 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 
-<<<<<<< HEAD
-public interface ProductRepository extends CrudRepository<Product,Integer> {
-    List<Product> findAll();
-
-    @Query("SELECT P FROM ProductType P")
-    List<ProductType> findAllProductTypes();
-
-    Optional<Product> findById(int id);
-    Product findByName(String name);
-
-    @Query("SELECT P FROM ProductType P WHERE P.name LIKE ?1")
-    ProductType getByName(String name);
-
-    @Query("SELECT P FROM Product P WHERE P.price < :price")
-    List<Product> findByPriceLessThan(Double price);
-    Product save(Product p);
-=======
 
 public interface ProductRepository extends CrudRepository<Product,Integer> {
     List<Product> findAll();
@@ -40,5 +23,4 @@ public interface ProductRepository extends CrudRepository<Product,Integer> {
     Optional<Product> findById(int id);
     Product findByName(String name);
     // Product save(Product p);
->>>>>>> 7045109d084b51506614545dc0f5c2622402fddd
 }
