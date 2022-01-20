@@ -31,4 +31,8 @@
             </div>
         </div>
     </form:form>
+<<<<<<< HEAD
 </petclinic:layout>
+=======
+</petclinic:layout>
+>>>>>>> 7045109d084b51506614545dc0f5c2622402fddd

@@ -15,10 +15,18 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "product_type")
+<<<<<<< HEAD
 public class ProductType extends BaseEntity{
     
     @NotEmpty
     @Size(min = 3, max = 50)
     @Column(unique = true)
+=======
+public class ProductType extends BaseEntity {
+    
+    @NotEmpty
+    @Size(min = 3, max = 50)
+    @Column(name = "name", unique = true)
+>>>>>>> 7045109d084b51506614545dc0f5c2622402fddd
     String name;
 }
